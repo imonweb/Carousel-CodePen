@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #FAFAFA;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid silver;
+  box-shadow: 0 0 8px silver;
+  width: 65%;
+  height: 60%;
+  margin: 20vh auto;
+  padding: 3% 0;
+  background: #FFF;
+  border-radius: 3px;
+}
+
+.standard {
+  min-width: 50%;
+  min-height: 50%;
+  height: 300px;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 3px;
+  transition: .3s linear;
+  opacity: 0;
+}
+
+.image {
+  opacity: 1;
+}
+
+button {
+  border: none;
+  background: none;
+  margin: 5%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  color: silver;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 600px){
+  .carousel-wrapper {
+    width: 90vw;
+  }
+  
+  .standard {
+    width: 70vw;
+  }
+}
+
+
